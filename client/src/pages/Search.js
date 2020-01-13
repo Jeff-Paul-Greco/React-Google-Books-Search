@@ -68,12 +68,8 @@ class Search extends Component {
         savedBooks = savedBooks[0];
 
         API.saveBook(savedBooks)
-
-            .then(res => this.setState({
-                message: alert("Book was added!")
-            }))
+            .then(res => this.setState({ message: alert(`Added ${res.data.title}!`) }))
             .catch(err => console.log(err))
-
     }
 
     render() {
@@ -120,11 +116,11 @@ class Search extends Component {
                             <Col size="md-12">
 
                                 <input type="text" className="form-control" onChange={this.handleInputChange} />
-                            
+
                             </Col>
-                        
+
                         </Row>
-                        
+
                         <Row fluid>
                             <Col size="md-2" float="right my-2">
                                 <button type="submit" className="form-control btn btn-primary float-right" onClick={this.handleFormSubmit}>Search</button>
@@ -134,7 +130,7 @@ class Search extends Component {
                     </form>
 
                 </Container>
-        
+
                 <Container fluid>
 
                     <Row>
@@ -142,7 +138,7 @@ class Search extends Component {
                             <SearchResult books={this.state.books} handleSaveButton={this.handleSaveButton} />
                         </Col>
                     </Row>
-                    
+
                 </Container>
             </div>
         );
