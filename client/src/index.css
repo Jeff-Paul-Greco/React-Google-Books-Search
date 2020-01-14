@@ -9,6 +9,10 @@ body {
   min-width: 100%;
 }
 
+.card {
+  background: rgb(184, 184, 184);
+}
+
 .navbar-brand {
   color: white;
 }
