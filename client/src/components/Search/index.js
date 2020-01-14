@@ -22,11 +22,11 @@ const Search = props => {
 
                                 <div className="float-right">
 
-                                    <button className="saveBook btn btn-primary" id={book.id} onClick={(event) => props.handleSaveButton(event)}>
+                                    <button className="saveBook btn btn-primary float-right" id={book.id} onClick={(event) => props.handleSaveButton(event)}>
                                         Save </button>
 
                                     <a href={book.link} target="_blank" rel="noreferrer noopener">
-                                        <button className="viewBook btn btn-success">
+                                        <button className="viewBook btn btn-success float-right">
                                             View </button>
                                     </a>
 

@@ -35,7 +35,7 @@ class Save extends Component {
 
                 <Nav />
 
-                <Container fluid>
+                <Container>
 
                     <Row>
 
@@ -52,7 +52,7 @@ class Save extends Component {
 
                 </Container>
 
-                <Container fluid>
+                <Container>
 
                     <SaveResults
                         books={this.state.books}

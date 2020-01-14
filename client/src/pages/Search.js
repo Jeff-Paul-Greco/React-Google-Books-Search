@@ -80,11 +80,11 @@ class Search extends Component {
 
                 <Nav />
 
-                <Container fluid>
+                <Container>
 
                     <Row>
 
-                        <Col size="md-10">
+                        <Col size="md-12">
 
                             <Jumbotron>
                                 <h1>Google Books Search</h1>
@@ -97,11 +97,11 @@ class Search extends Component {
 
                 </Container>
 
-                <Container fluid>
+                <Container>
 
                     <form className="border">
 
-                        <Row fluid>
+                        <Row>
 
                             <Col size="md-12">
 
@@ -111,7 +111,7 @@ class Search extends Component {
 
                         </Row>
 
-                        <Row fluid>
+                        <Row>
 
                             <Col size="md-12">
 
@@ -121,7 +121,7 @@ class Search extends Component {
 
                         </Row>
 
-                        <Row fluid>
+                        <Row>
                             <Col size="md-2" float="right my-2">
                                 <button type="submit" className="form-control btn btn-primary float-right" onClick={this.handleFormSubmit}>Search</button>
                             </Col>
@@ -131,9 +131,9 @@ class Search extends Component {
 
                 </Container>
 
-                <Container fluid>
+                <Container>
 
-                    <Row>
+                    <Row className="results">
                         <Col size="md-12">
                             <SearchResult books={this.state.books} handleSaveButton={this.handleSaveButton} />
                         </Col>
