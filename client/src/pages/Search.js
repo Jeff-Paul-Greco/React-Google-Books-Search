@@ -99,7 +99,7 @@ class Search extends Component {
 
                 <Container>
 
-                    <form className="border">
+                    <form className="border card card-body">
 
                         <Row>
 

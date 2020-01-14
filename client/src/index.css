@@ -1,16 +1,18 @@
 body {
-  background: url("../src/imgs/body.jpg");
+  background: url("../src/imgs/navbar.jpg");
   font-family: 'Raleway', sans-serif;
-  background-position: fixed;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 .navbar {
-  background: url("../src/imgs/navbar.png");
+  background: url("../src/imgs/body.png");
   min-width: 100%;
 }
 
 .card {
   background: rgb(184, 184, 184);
+  margin-bottom: 10px;
 }
 
 .navbar-brand {

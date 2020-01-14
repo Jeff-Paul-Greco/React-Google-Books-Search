@@ -21,7 +21,7 @@
     "engines": {
         "npm": "6.9.0",
         "node": "10.16.0"
-      },
+    },
     "browserslist": [
         ">0.2%",
         "not dead",
