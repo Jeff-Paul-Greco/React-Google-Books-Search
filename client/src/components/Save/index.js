@@ -5,7 +5,7 @@ const Save = props => {
 
     return (
 
-        <div className="card">
+        <div className="card shadow-lg">
 
             <div className="card-body">
 
@@ -22,18 +22,6 @@ const Save = props => {
                                 <Row>
 
                                     <h3>{book.title}</h3>
-
-                                    <div className="float-right">
-
-                                        <button className="saveBook btn btn-danger" onClick={() => props.handleDeleteButton(book._id)}>
-                                            Delete </button>
-
-                                        <a href={book.link} target="_blank" rel="noreferrer noopener">
-                                            <button className="viewBook btn btn-success">
-                                                View </button>
-                                        </a>
-
-                                    </div>
 
                                 </Row>
 
@@ -59,6 +47,20 @@ const Save = props => {
 
                                     </Col>
 
+                                </Row>
+
+                                <Row>
+                                    <div className="container">
+
+                                        <button className="saveBook btn btn-danger float-right" onClick={() => props.handleDeleteButton(book._id)}>
+                                            Delete </button>
+
+                                        <a href={book.link} target="_blank" rel="noreferrer noopener">
+                                            <button className="viewBook btn btn-success float-right">
+                                                View </button>
+                                        </a>
+
+                                    </div>
                                 </Row>
 
                             </li>

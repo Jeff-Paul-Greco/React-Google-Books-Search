@@ -1,29 +1,40 @@
 body {
-  background: url("../src/imgs/navbar.jpg");
+  background: url("../src/imgs/body.jpg");
   font-family: 'Raleway', sans-serif;
   background-attachment: fixed;
   background-size: 100%;
 }
 
 .navbar {
-  background: url("../src/imgs/body.png");
+  background: url("../src/imgs/navbar.jpg");
   min-width: 100%;
+  position: fixed;
+  z-index: 100;
+  border-width: 0px 0px 2px 0px;
+  border-color: rgb(0, 0, 0);
+  border-style: inset;
 }
 
 .card {
-  background: rgb(184, 184, 184);
+  background: rgb(216, 216, 216);
   margin-bottom: 10px;
 }
 
 .navbar-brand {
   color: white;
+  min-width: 100%;
+  font-size: 28px;
 }
 
 h3 {
-  margin-bottom: 15px;
+  margin: 0px 10px 15px 10px;
 }
 
-.list-group-items {
+.bookDescription {
+  margin-right: 10px;
+}
+
+.list-group-item {
   margin-top: 30px;
 }
 
@@ -32,7 +43,7 @@ h3.book-author {
 } 
 
 .btn {
-  margin-left: 30px;
+  margin-left: 22px;
   min-width: 100px;
 }
 
@@ -41,4 +52,20 @@ h3.book-author {
   color: white;
   text-shadow: 3px 3px black;
   font-weight: bolder;
+  z-index: -100;
+}
+
+.list-group-item {
+  background: url("../../client/src/imgs/background2.png");
+  border-style: outset;
+  border-width: 2px;
+  border-color: white;
+}
+
+img {
+  min-width: 80%;
+}
+
+.bookInfo {
+  background: white;
 }

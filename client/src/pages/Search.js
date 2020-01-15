@@ -115,7 +115,7 @@ class Search extends Component {
 
                             <Col size="md-12">
 
-                                <input type="text" className="form-control" onChange={this.handleInputChange} />
+                                <input type="text" className="form-control shadow-lg" onChange={this.handleInputChange} />
 
                             </Col>
 
@@ -123,7 +123,7 @@ class Search extends Component {
 
                         <Row>
                             <Col size="md-2" float="right my-2">
-                                <button type="submit" className="form-control btn btn-primary float-right" onClick={this.handleFormSubmit}>Search</button>
+                                <button type="submit" className="shadow-lg form-control btn btn-secondary float-right" onClick={this.handleFormSubmit}>Search</button>
                             </Col>
                         </Row>
 

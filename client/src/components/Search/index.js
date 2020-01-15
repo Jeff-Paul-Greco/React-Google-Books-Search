@@ -4,7 +4,7 @@ import { Row, Col } from "../Grid"
 const Search = props => {
     return (
 
-        <div className="card">
+        <div className="card shadow-lg">
 
             <div className="card-body">
 
@@ -20,17 +20,7 @@ const Search = props => {
 
                                 <h2>{book.title}</h2>
 
-                                <div className="float-right">
 
-                                    <button className="saveBook btn btn-primary float-right" id={book.id} onClick={(event) => props.handleSaveButton(event)}>
-                                        Save </button>
-
-                                    <a href={book.link} target="_blank" rel="noreferrer noopener">
-                                        <button className="viewBook btn btn-success float-right">
-                                            View </button>
-                                    </a>
-
-                                </div>
 
                             </Row>
 
@@ -52,6 +42,19 @@ const Search = props => {
 
                                 </Col>
 
+                            </Row>
+                            <Row>
+                                <div className="container">
+
+                                    <button className="saveBook btn btn-dark float-right" id={book.id} onClick={(event) => props.handleSaveButton(event)}>
+                                        Save </button>
+
+                                    <a href={book.link} target="_blank" rel="noreferrer noopener">
+                                        <button className="viewBook btn btn-success float-right">
+                                            View </button>
+                                    </a>
+
+                                </div>
                             </Row>
 
                         </li>
